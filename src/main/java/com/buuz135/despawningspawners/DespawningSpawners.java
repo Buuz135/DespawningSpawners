@@ -23,7 +23,7 @@ public class DespawningSpawners {
     public void onPreInit(FMLPreInitializationEvent event) {
         MinecraftForge.EVENT_BUS.register(this);
         Configuration config = new Configuration(event.getSuggestedConfigurationFile());
-        MAX_SPAWNS = config.getInt("maxSpawnerSpawns", Configuration.CATEGORY_GENERAL, 50, 0, Integer.MAX_VALUE, "Amount of spawns can a spawner do");
+        MAX_SPAWNS = config.getInt("maxSpawnerSpawns", Configuration.CATEGORY_GENERAL, 50, 0, Integer.MAX_VALUE, "Amount of spawns can a spawner do. It won't stop the remaining spawns of a spawner 'work'.");
         config.save();
     }
 

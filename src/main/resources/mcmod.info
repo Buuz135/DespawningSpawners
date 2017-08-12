@@ -1,0 +1,16 @@
+[
+{
+  "modid": "despawningspawners",
+  "name": "Despawning Spawners",
+  "description": "Limiting the amount of spawns a spawner can do in it's lifetime.",
+  "version": "${version}",
+  "mcversion": "${mcversion}",
+  "url": "",
+  "updateUrl": "",
+  "authorList": ["Buuz135"],
+  "credits": "Dominance for giving me the idea",
+  "logoFile": "",
+  "screenshots": [],
+  "dependencies": []
+}
+]

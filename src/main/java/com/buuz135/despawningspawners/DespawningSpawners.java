@@ -8,8 +8,6 @@ import net.minecraftforge.event.entity.living.LivingSpawnEvent;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
-import net.minecraftforge.fml.common.gameevent.TickEvent;
-import net.minecraftforge.fml.server.FMLServerHandler;
 
 import java.awt.*;
 import java.util.Arrays;
@@ -62,20 +60,4 @@ public class DespawningSpawners {
         return null;
     }
 
-    @SubscribeEvent
-    public void onServerTick(TickEvent.ServerTickEvent event) {
-        if (event.type != TickEvent.Type.WORLD) return;
-        if (FMLServerHandler.instance() == null  || FMLServerHandler.instance().getServer() == null || FMLServerHandler.instance().getServer().worlds == null)
-            return;
-        System.out.println("TICK");
-//        for (WorldServer worldServer : FMLServerHandler.instance().getServer().worlds) {
-//            SpawnerSavedData data = (SpawnerSavedData) worldServer.getPerWorldStorage().getOrLoadData(SpawnerSavedData.class, SpawnerSavedData.NAME);
-//            if (data != null) {
-//                for (Map.Entry<BlockPos, Integer> blockPosIntegerEntry : data.getSpawners().entrySet()) {
-//                    worldServer.spawnParticle(EnumParticleTypes.REDSTONE, blockPosIntegerEntry.getKey().getX(), blockPosIntegerEntry.getKey().getY(), blockPosIntegerEntry.getKey().getZ(), 10, 0.5, 0.5, 0.5, 0, 1, 1, 1);
-//                }
-//            }
-//        }
-
-    }
 }

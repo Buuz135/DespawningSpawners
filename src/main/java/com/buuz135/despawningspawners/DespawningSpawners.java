@@ -14,7 +14,7 @@ import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Random;
 
-@Mod(modid = "despawningspawners", name = "Despawning Spawners", version = "1.0")
+@Mod(modid = "despawningspawners", name = "Despawning Spawners", version = "1.1", dependencies = "required:forge@[14.23.1.2596,);")
 public class DespawningSpawners {
 
     @Mod.EventHandler

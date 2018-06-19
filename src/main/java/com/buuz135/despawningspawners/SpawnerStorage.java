@@ -47,7 +47,6 @@ public class SpawnerStorage implements ICapabilitySerializable<NBTTagCompound> {
 
     @Override
     public NBTTagCompound serializeNBT() {
-        System.out.println("Saving");
         NBTTagCompound nbt = new NBTTagCompound();
         nbt.setInteger("Amount", this.getAmount());
         return nbt;
@@ -56,7 +55,6 @@ public class SpawnerStorage implements ICapabilitySerializable<NBTTagCompound> {
     @Override
     public void deserializeNBT(NBTTagCompound nbt) {
         this.setAmount(nbt.getInteger("Amount"));
-        System.out.println("Reading");
     }
 
     private static class CapabilitySpawnerStorage implements Capability.IStorage<SpawnerStorage> {

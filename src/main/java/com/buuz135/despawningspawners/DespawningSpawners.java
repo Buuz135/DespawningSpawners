@@ -39,7 +39,6 @@ public class DespawningSpawners {
         if (pos != null) {
             TileEntity spawner = event.getWorld().getTileEntity(pos);
             if (spawner instanceof TileEntityMobSpawner && spawner.hasCapability(SpawnerStorage.SPAWNER_CAPABILITY, null)) {
-                System.out.println(spawner.hasCapability(SpawnerStorage.SPAWNER_CAPABILITY, null));
                 SpawnerStorage storage = spawner.getCapability(SpawnerStorage.SPAWNER_CAPABILITY, null);
 
                 //Moving data from the old system
@@ -66,7 +65,6 @@ public class DespawningSpawners {
                 if (storage.getAmount() <= 0) {
                     event.getWorld().destroyBlock(pos, true);
                 }
-                System.out.println(storage.getAmount());
             }
         }
 

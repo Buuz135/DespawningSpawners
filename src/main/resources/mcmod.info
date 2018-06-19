@@ -2,7 +2,7 @@
 {
   "modid": "despawningspawners",
   "name": "Despawning Spawners",
-  "description": "Limiting the amount of spawns a spawner can do in it's lifetime.",
+  "description": "Limiting the amount of spawns a spawner can do in its lifetime.",
   "version": "${version}",
   "mcversion": "${mcversion}",
   "url": "",

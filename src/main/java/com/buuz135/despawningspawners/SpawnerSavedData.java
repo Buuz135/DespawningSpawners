@@ -6,6 +6,7 @@ import net.minecraft.world.storage.WorldSavedData;
 
 import java.util.HashMap;
 
+@Deprecated
 public class SpawnerSavedData extends WorldSavedData {
 
     public static final String NAME = "SPAWNERS_DATA";

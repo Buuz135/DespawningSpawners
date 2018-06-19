@@ -13,7 +13,7 @@ public class DespawningConfig {
     @Config.Comment("Amount of spawns can a spawner do. It won't stop the remaining spawns of a spawner 'work'.")
     public static int maxSpawnerSpawns = 50;
 
-    @Config.Comment("A list of blocks that are considered a spawner.")
+    @Config.Comment("NO LONGER VALID!! A list of blocks that are considered a spawner.")
     public static String[] spawnerBlocks = new String[]{"minecraft:mob_spawner"};
 
     @Config.Comment("If enabled the spawners will spawn particles depenending how many spawns have left. (GREEN > 50%; YELLOW < 50%; RED < 10%).")
